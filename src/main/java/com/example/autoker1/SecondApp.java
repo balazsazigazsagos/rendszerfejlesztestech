@@ -12,5 +12,10 @@ public class SecondApp extends Application {
         Scene scene=new Scene(fxmlLoader.load());
         SecondAppController secondAppController=fxmlLoader.getController();
         secondAppController.secondApp=this;
+        stage.setTitle("Új autó hozzáadása az autókereskedéshez");
+        stage.setScene(scene);
+        stage.setWidth(730);
+        stage.setHeight(400);
+        stage.showAndWait();
     }
 }
