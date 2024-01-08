@@ -41,6 +41,11 @@ public class MainController {
 
         pane.getChildren().add(imageView);
 
+        //Értékesítve gomb és id létrehozása
+        Button sellButton = new Button("Értékesítve");
+        sellButton.setLayoutX(113);
+        sellButton.setLayoutY(201);
+
         //Visszatérési érték
         return pane;
     }
