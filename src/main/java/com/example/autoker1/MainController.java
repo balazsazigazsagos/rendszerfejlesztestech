@@ -29,6 +29,7 @@ public class MainController {
 
     public void initalize(){
         autoKezelo();
+        addCartoShopBTN.setOnAction(this::addNewCartoShop);
         sumAllCarPrices();
     }
 
