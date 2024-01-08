@@ -57,6 +57,11 @@ public class MainController {
         // Egyedi fx:id beállítása
         label.setId("label"+index);
 
+        label.prefWidth(200);
+        label.prefHeight(66);
+        label.setLayoutX(-1);
+        label.setLayoutY(134);
+
         //Visszatérési érték
         return pane;
     }
