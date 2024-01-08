@@ -23,6 +23,9 @@ public class Main extends Application {
         stage.show();
         stage.show();
     }
+    public void Hide() {
+        stage.hide();
+    }
 
     public static void main(String[] args) {
         launch();
