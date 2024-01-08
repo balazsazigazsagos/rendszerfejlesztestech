@@ -29,7 +29,12 @@ public class AutoAdatKezelo {
         } catch (Exception e){
             System.out.println(e.getMessage());
         }
-
+        //Autó példányok kiválasztása - létrehozása
+        for(int i=0; i<sorokAdatai.size();i++){
+            Auto tempAuto = new Auto (Integer.parseInt(sorokAdatai.get(i)[0]),sorokAdatai.get(i)[1],sorokAdatai.get(i)[2],
+                    Integer.parseInt(sorokAdatai.get(i)[3]),Integer.parseInt(sorokAdatai.get(i)[4]),
+                    sorokAdatai.get(i)[5]);
+            osszesAuto.add(tempAuto);
+        }
     }
-
 }
