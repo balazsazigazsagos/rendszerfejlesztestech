@@ -92,8 +92,22 @@ public class AutoAdatKezelo {
     public void removeAuto(int index) {
         if (index >= 0 && index < osszesAuto.size()) {
             osszesAuto.remove(index);
+            try {
+                FileWriter fw = new FileWriter(filename);
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter pw = new PrintWriter(bw);
 
+                // Újraírjuk az első sort
+                pw.println("auto_id,marka,modell,evjarat,ar,kep");
+
+
+
+                pw.flush();
+                pw.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-    }
 }
+
