@@ -26,6 +26,14 @@ public class Main extends Application {
     public void Hide() {
         stage.hide();
     }
+    public void Refresh(){
+        try {
+            stage.close();
+            start(stage);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     public static void main(String[] args) {
         launch();
