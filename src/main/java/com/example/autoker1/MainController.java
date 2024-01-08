@@ -27,6 +27,11 @@ public class MainController {
     AutoAdatKezelo autoAdatKezelo = new AutoAdatKezelo();
     List<Auto> osszesAuto = autoAdatKezelo.osszesAuto;
 
+    public void initalize(){
+        autoKezelo();
+        sumAllCarPrices();
+    }
+
     @FXML
     //Új Pane beszúrása az AnchorPanebe
     public void autoKezelo(){
