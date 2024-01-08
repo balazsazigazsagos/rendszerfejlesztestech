@@ -56,4 +56,12 @@ public class AutoAdatKezelo {
             osszesAuto.add(tempAuto);
         }
     }
+
+    public void addAuto(String marka,String modell, String evjarat, String ar,String kep_link) {
+
+
+
+        Auto newAuto = new Auto(nextIndex, marka, modell, Integer.parseInt(evjarat), Integer.parseInt(ar), kep_link);
+        osszesAuto.add(newAuto);
+    }
 }
