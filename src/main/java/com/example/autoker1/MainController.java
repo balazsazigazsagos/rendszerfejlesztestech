@@ -93,6 +93,8 @@ public class MainController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        application.Refresh();
+        addCartoShopBTN.setDisable(false);
     }
 
     //autó eladásához gomb -értékesítés
