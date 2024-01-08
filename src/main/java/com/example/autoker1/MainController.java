@@ -19,6 +19,8 @@ public class MainController {
     public ImageView imgShowedOnScreen;
     public Button addCartoShopBTN;
     public Label osszesar;
+    public int yEltolas=60;
+    public int yElozoElhelyez=0;
 
     public Main application;
 
@@ -31,6 +33,13 @@ public class MainController {
         Pane pane = new Pane();
         pane.setPrefHeight(240);
         pane.setPrefWidth(200);
+
+        if(index==0){
+            pane.setLayoutY(60);
+        }else if(index % 6 == 0) {
+            yElozoElhelyez++;
+        }
+        pane.setLayoutY(yElozoElhelyez * 240 + yEltolas);
 
         //ImageView létrehozása - image hozzáadás
         ImageView imageView = new ImageView();
