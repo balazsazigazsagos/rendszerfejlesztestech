@@ -47,7 +47,10 @@ public class MainController {
         Button sellButton = new Button("Értékesítve");
         sellButton.setLayoutX(113);
         sellButton.setLayoutY(201);
-
+        // Egyedi fx:id beállítása
+        sellButton.setId("sell" + index);
+        sellButton.setOnAction(this::sellCar);
+        pane.getChildren().add(sellButton);
 
 
         //Visszatérési érték
