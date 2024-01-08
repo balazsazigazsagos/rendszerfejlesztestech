@@ -77,6 +77,10 @@ public class MainController {
     }
 
     public void disAppearImage(MouseEvent mouseEvent) {
+        if( imgShowedOnScreen.isVisible()){
+            imgShowedOnScreen.setVisible(false);
+            imgShowedOnScreen.setImage(null);
+        }
     }
 
     public void addNewCartoShop(ActionEvent event) {
