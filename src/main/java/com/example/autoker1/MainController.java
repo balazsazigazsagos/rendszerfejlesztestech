@@ -39,6 +39,8 @@ public class MainController {
         Image image = new Image(file.toURI().toString());
         imageView.setImage(image);
 
+        pane.getChildren().add(imageView);
+
         //Visszatérési érték
         return pane;
     }
