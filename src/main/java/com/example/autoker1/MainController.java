@@ -84,6 +84,8 @@ public class MainController {
     }
 
     public void addNewCartoShop(ActionEvent event) {
+        application.Hide();
+        addCartoShopBTN.setDisable(true);
     }
 
     //autó eladásához gomb -értékesítés
