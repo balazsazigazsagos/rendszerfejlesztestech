@@ -10,6 +10,7 @@ public class SecondApp extends Application {
         this.stage=stage;
         FXMLLoader fxmlLoader=new FXMLLoader(SecondApp.class.getResource("autohozzaadas-view.fxml"));
         Scene scene=new Scene(fxmlLoader.load());
-
+        SecondAppController secondAppController=fxmlLoader.getController();
+        secondAppController.secondApp=this;
     }
 }
