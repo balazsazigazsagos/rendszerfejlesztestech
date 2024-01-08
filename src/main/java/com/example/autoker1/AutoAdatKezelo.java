@@ -14,7 +14,21 @@ public class AutoAdatKezelo {
         filename="src/main/resources/autok.csv";
         File file=new File(filename);
 
+        try {
+            Scanner inputStream = new Scanner(file);
+            inputStream.nextLine(); //ignores first line
 
+            //DATAROWS SIZE IS 0 HERE
+
+            while (inputStream.hasNext()){
+                String data = inputStream.nextLine(); //gets whole line
+                String[] values = data.split(","); //splits by commas
+                sorokAdatai.add(values); //adds the line to an arraylist (dataRows)
+            }
+            inputStream.close();
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
 
     }
 
