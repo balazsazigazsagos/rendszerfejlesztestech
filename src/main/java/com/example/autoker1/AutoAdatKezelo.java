@@ -100,7 +100,12 @@ public class AutoAdatKezelo {
                 // Újraírjuk az első sort
                 pw.println("auto_id,marka,modell,evjarat,ar,kep");
 
-
+                // Újraírjuk a többi adatot
+                for (int i = 0; i < osszesAuto.size(); i++) {
+                    pw.println(osszesAuto.get(i).auto_id + "," + osszesAuto.get(i).marka +
+                            "," + osszesAuto.get(i).modell + "," + osszesAuto.get(i).evjarat + "," +
+                            osszesAuto.get(i).ar + "," + osszesAuto.get(i).kep_link);
+                }
 
                 pw.flush();
                 pw.close();
