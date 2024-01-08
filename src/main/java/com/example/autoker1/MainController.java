@@ -61,6 +61,11 @@ public class MainController {
         label.prefHeight(66);
         label.setLayoutX(-1);
         label.setLayoutY(134);
+        // - Szöveg hozzáadása a labelhez
+        label.setText(osszesAuto.get(index).marka + " " + osszesAuto.get(index).modell +
+                " (" + osszesAuto.get(index).evjarat + ")\n" +
+                osszesAuto.get(index).ar + " Ft");
+        pane.getChildren().add(label);
 
         //Visszatérési érték
         return pane;
