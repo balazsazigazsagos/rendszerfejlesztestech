@@ -110,4 +110,11 @@ public class MainController {
             e.printStackTrace(); // Hiba kiírása a konzolra
         }
     }
+    public Integer sum=0;
+    public void sumAllCarPrices(){
+        for (int i=0;i<osszesAuto.size();i++){
+            sum+= osszesAuto.get(i).ar;
+        }
+        osszesar.setText("Összes autó értéke: "+sum.toString() + "Ft");
+    }
 }
