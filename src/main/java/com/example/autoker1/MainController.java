@@ -54,6 +54,8 @@ public class MainController {
 
         //Label létrehozása
         Label label = new Label();
+        // Egyedi fx:id beállítása
+        label.setId("label"+index);
 
         //Visszatérési érték
         return pane;
