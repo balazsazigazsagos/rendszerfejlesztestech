@@ -19,6 +19,8 @@ public class MainController {
     public Button addCartoShopBTN;
     public Label osszesar;
 
+    public Main application;
+
     AutoAdatKezelo autoAdatKezelo = new AutoAdatKezelo();
     List<Auto> osszesAuto = autoAdatKezelo.osszesAuto;
 
@@ -46,6 +48,8 @@ public class MainController {
         sellButton.setLayoutX(113);
         sellButton.setLayoutY(201);
 
+
+
         //Visszatérési érték
         return pane;
     }
@@ -54,5 +58,10 @@ public class MainController {
     }
 
     public void addNewCartoShop(ActionEvent event) {
+    }
+
+    //autó eladásához gomb -értékesítés
+    public void sellCar(ActionEvent event) {
+
     }
 }
