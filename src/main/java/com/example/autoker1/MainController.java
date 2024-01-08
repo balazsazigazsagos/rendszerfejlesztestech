@@ -52,6 +52,8 @@ public class MainController {
         sellButton.setOnAction(this::sellCar);
         pane.getChildren().add(sellButton);
 
+        //Label létrehozása
+        Label label = new Label();
 
         //Visszatérési érték
         return pane;
