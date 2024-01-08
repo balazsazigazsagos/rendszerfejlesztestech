@@ -41,6 +41,12 @@ public class MainController {
         }
         pane.setLayoutY(yElozoElhelyez * 240 + yEltolas);
 
+        if (index % 6 == 0) {
+            pane.setLayoutX(60);
+        } else {
+            pane.setLayoutX(60 + (index % 6) * 220);
+        }
+
         //ImageView létrehozása - image hozzáadás
         ImageView imageView = new ImageView();
         imageView.setId("img"+index);
