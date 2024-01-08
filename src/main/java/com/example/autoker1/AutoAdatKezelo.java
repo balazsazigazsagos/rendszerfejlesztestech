@@ -89,4 +89,11 @@ public class AutoAdatKezelo {
             e.printStackTrace();
         }
     }
+    public void removeAuto(int index) {
+        if (index >= 0 && index < osszesAuto.size()) {
+            osszesAuto.remove(index);
+
+        }
+    }
+    }
 }
