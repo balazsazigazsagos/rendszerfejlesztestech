@@ -22,6 +22,13 @@ public class MainController {
         pane.setPrefHeight(240);
         pane.setPrefWidth(200);
 
+        //ImageView létrehozása - image hozzáadás
+        ImageView imageView = new ImageView();
+        imageView.setId("img"+index);
+        imageView.setFitHeight(133);
+        imageView.setFitWidth(200);
+
+
         //Visszatérési érték
         return pane;
     }
