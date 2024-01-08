@@ -28,6 +28,13 @@ public class MainController {
     List<Auto> osszesAuto = autoAdatKezelo.osszesAuto;
 
     @FXML
+    //Új Pane beszúrása az AnchorPanebe
+    public void autoKezelo(){
+        for(int i=0;i<osszesAuto.size();i++){
+            Pane pane=createPane(i);
+            anchorPane.getChildren().add(pane);
+        }
+    }
     //Új Pane létrehozása megjelenítéshez
     public Pane createPane(int index) {
         Pane pane = new Pane();
