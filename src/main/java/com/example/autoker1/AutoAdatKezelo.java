@@ -74,7 +74,14 @@ public class AutoAdatKezelo {
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
 
-
+            // minden mező kitöltésének ellenőrzése
+            if (marka.equals("") || modell.equals("") || evjarat.equals("") || ar.equals("") || kep_link.equals("")) {
+                // ha az egyik mező üres, Exception dobás
+                System.out.println("Error: Fill all fields");
+            } else {
+                // ha ki vannak töltve a mezők
+                pw.println(nextIndex + "," + marka + "," + modell + "," + evjarat + "," + ar + "," + kep_link);
+            }
 
             pw.flush();
             pw.close();
