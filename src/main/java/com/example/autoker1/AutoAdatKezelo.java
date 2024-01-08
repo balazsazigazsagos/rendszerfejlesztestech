@@ -59,7 +59,10 @@ public class AutoAdatKezelo {
 
     public void addAuto(String marka,String modell, String evjarat, String ar,String kep_link) {
 
-
+        if (!osszesAuto.isEmpty()) {
+            int lastId = osszesAuto.get(osszesAuto.size() - 1).auto_id;
+            nextIndex = lastId + 1;
+        }
 
         Auto newAuto = new Auto(nextIndex, marka, modell, Integer.parseInt(evjarat), Integer.parseInt(ar), kep_link);
         osszesAuto.add(newAuto);
