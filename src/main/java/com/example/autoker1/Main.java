@@ -16,6 +16,7 @@ public class Main extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         MainController controller=fxmlLoader.getController();
 
+        stage.setTitle("Kókány autókereskedés bt.");
         //teljes képernyős window
         stage.setMaximized(true);
         stage.setScene(scene);
