@@ -1,6 +1,9 @@
 package com.example.autoker1;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -66,5 +69,17 @@ public class AutoAdatKezelo {
 
         Auto newAuto = new Auto(nextIndex, marka, modell, Integer.parseInt(evjarat), Integer.parseInt(ar), kep_link);
         osszesAuto.add(newAuto);
+        try {
+            FileWriter fw = new FileWriter(filename, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
+
+
+
+            pw.flush();
+            pw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
