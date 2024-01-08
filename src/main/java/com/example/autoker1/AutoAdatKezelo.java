@@ -10,6 +10,20 @@ public class AutoAdatKezelo {
     public String filename;
     int nextIndex=1;
 
+
+    //Autó keresés ID alapján
+    public Auto getAutoByID(String autoID){
+        System.out.println("Searching for auto with ID: "+autoID);
+        for(int i = 0; i<osszesAuto.size(); i++){
+            if(autoID.equals(osszesAuto.get(i).auto_id.toString())){
+                return osszesAuto.get(i);
+            }
+        }
+        System.out.println("Adatbázis hiba!");
+        return osszesAuto.get(0);
+    }
+
+
     public AutoAdatKezelo(){
         filename="src/main/resources/autok.csv";
         File file=new File(filename);
