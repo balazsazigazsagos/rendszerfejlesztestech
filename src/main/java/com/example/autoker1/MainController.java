@@ -79,6 +79,15 @@ public class MainController {
 
     //autó eladásához gomb -értékesítés
     public void sellCar(ActionEvent event) {
+        try {
+            Button sellButton = (Button) event.getSource();
+            String idPRE = sellButton.getId();
+            int id = Integer.parseInt(idPRE.substring(4));
 
+            autoAdatKezelo.removeAuto(id);
+            application.Refresh();
+        } catch (Exception e) {
+            e.printStackTrace(); // Hiba kiírása a konzolra
+        }
     }
 }
