@@ -18,4 +18,7 @@ public class SecondApp extends Application {
         stage.setHeight(400);
         stage.showAndWait();
     }
+    public void Close() {
+        stage.close();
+    }
 }
