@@ -22,4 +22,7 @@ public class SecondAppController extends MainController {
                 textfield3.getText(),textfield4.getText(),labelKepLink.getText());
         secondApp.Close();
     }
+    public void initalize(){
+        submitBTN.setOnAction(this::addToAutoker);
+    }
 }
