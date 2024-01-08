@@ -9,6 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.util.List;
@@ -86,6 +87,12 @@ public class MainController {
     public void addNewCartoShop(ActionEvent event) {
         application.Hide();
         addCartoShopBTN.setDisable(true);
+        try {
+            SecondApp secondApp = new SecondApp();
+            secondApp.start(new Stage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     //autó eladásához gomb -értékesítés
