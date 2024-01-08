@@ -70,6 +70,11 @@ public class MainController {
         //Visszatérési érték
         return pane;
     }
+    public void showImageOnScreen(MouseEvent mouseEvent){
+        ImageView sourceImageView = (ImageView) mouseEvent.getSource();
+        imgShowedOnScreen.setImage(sourceImageView.getImage());
+        imgShowedOnScreen.setVisible(true);
+    }
 
     public void disAppearImage(MouseEvent mouseEvent) {
     }
