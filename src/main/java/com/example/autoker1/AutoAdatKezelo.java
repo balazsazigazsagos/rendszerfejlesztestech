@@ -23,6 +23,11 @@ public class AutoAdatKezelo {
         return osszesAuto.get(0);
     }
 
+    //autók számának lekérdezése
+    public int getAutokSzama(){
+        return (osszesAuto.size());
+    }
+
 
     public AutoAdatKezelo(){
         filename="src/main/resources/autok.csv";
