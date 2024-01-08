@@ -15,7 +15,8 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         MainController controller=fxmlLoader.getController();
-
+        controller.application=this;
+        controller.initalize();
         stage.setTitle("Kókány autókereskedés bt.");
         //teljes képernyős window
         stage.setMaximized(true);
