@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         this.stage=stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("autokereskedes-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         MainController controller=fxmlLoader.getController();
         controller.application=this;
@@ -21,7 +21,6 @@ public class Main extends Application {
         //teljes képernyős window
         stage.setMaximized(true);
         stage.setScene(scene);
-        stage.show();
         stage.show();
     }
     public void Hide() {
