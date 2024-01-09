@@ -45,3 +45,32 @@ public class Controller {
         currentNumber = "";
         savedNumbers.setText(firstNumber + " " + calculationType);
     }
+
+    @FXML
+    void calculate(ActionEvent event) {
+        int firstNumberInt = Integer.parseInt(firstNumber);
+        int secondNumberInt = Integer.parseInt(currentNumber);
+
+        switch (calculationType) {
+            case "+" -> {
+                int calculatedNumber = firstNumberInt + secondNumberInt;
+                savedNumbers.setText(firstNumber + " + " + currentNumber + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+            }
+            case "-" -> {
+                int calculatedNumber = firstNumberInt - secondNumberInt;
+                savedNumbers.setText(firstNumber + " - " + currentNumber + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+            }
+            case "/" -> {
+                double calculatedNumber = firstNumberInt / (double)secondNumberInt;
+                savedNumbers.setText(firstNumber + " / " + currentNumber + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+            }
+            case "*" -> {
+                int calculatedNumber = firstNumberInt * secondNumberInt;
+                savedNumbers.setText(firstNumber + " * " + currentNumber + " = " + calculatedNumber);
+                textField.setText(String.valueOf(calculatedNumber));
+            }
+        }
+    }
