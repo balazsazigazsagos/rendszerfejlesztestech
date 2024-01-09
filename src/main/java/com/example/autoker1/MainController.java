@@ -18,6 +18,7 @@ public class MainController {
     public AnchorPane anchorPane;
     public ImageView imgShowedOnScreen;
     public Button addCartoShopBTN;
+    public Button kalkulator;
     public Label osszesar;
     public int yEltolas=60;
     public int yElozoElhelyez=0;
@@ -148,5 +149,17 @@ public class MainController {
             sum+= osszesAuto.get(i).ar;
         }
         osszesar.setText("Összes autó értéke: "+sum.toString() + "Ft");
+    }
+    public void openKalkulator(ActionEvent event) {
+        application.Hide();
+        addCartoShopBTN.setDisable(true);
+        try {
+            KalkulatorApp kalkulatorApp = new KalkulatorApp();
+            kalkulatorApp.start(new Stage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        application.Refresh();
+        addCartoShopBTN.setDisable(false);
     }
 }
