@@ -133,3 +133,13 @@ public class Controller {
     void button9Clicked(ActionEvent event) {
         addNumber("9");
     }
+
+    public void updateTextField(){
+        textField.setText(currentNumber);
+    }
+
+    public void addNumber(String number){
+        currentNumber += number;
+        updateTextField();
+    }
+}
