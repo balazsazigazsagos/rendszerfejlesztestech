@@ -106,6 +106,7 @@ public class MainController {
         ImageView sourceImageView = (ImageView) mouseEvent.getSource();
         imgShowedOnScreen.setImage(sourceImageView.getImage());
         imgShowedOnScreen.setVisible(true);
+        imgShowedOnScreen.toFront();
     }
 
     public void disAppearImage(MouseEvent mouseEvent) {
