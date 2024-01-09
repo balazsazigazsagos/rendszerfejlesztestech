@@ -1,0 +1,72 @@
+Dokumentáció a JavaFX alkalmazáshoz
+Auto osztály
+Az Auto osztály egy autót reprezentál, az alábbi attribútumokkal:
+
+auto_id: Egy egész szám, az autó egyedi azonosítóját reprezentálja.
+marka: Egy karakterlánc, az autó márka nevét reprezentálja.
+modell: Egy karakterlánc, az autó modelljét reprezentálja.
+evjarat: Egy egész szám, az autó gyártási évét reprezentálja.
+ar: Egy egész szám, az autó árát reprezentálja.
+kep_link: Egy karakterlánc, az autó képének elérési útját reprezentálja.
+Konstruktor
+Az osztály rendelkezik egy konstruktorral, amely az attribútumokat a megadott paraméterek alapján inicializálja.
+
+AutoAdatKezelo osztály
+Az AutoAdatKezelo osztály kezeli az autók adatait, beleértve az olvasást egy CSV fájlból, új autók hozzáadását, autók eltávolítását és autók keresését ID alapján.
+
+Metódusok
+getAutoByID(String autoID): Keres egy autót az azonosítója alapján, és visszaadja a megfelelő Auto objektumot.
+getAutokSzama(): Visszaadja az autók összes számát az adatkészletben.
+addAuto(String marka, String modell, String evjarat, String ar, String kep_link): Hozzáad egy új autót az adatkészlethez és frissíti a CSV fájlt.
+removeAuto(int index): Eltávolít egy autót az adatkészletből a megadott indexen, és frissíti a CSV fájlt.
+Konstruktor
+Az osztálynak van egy konstruktora, amely beolvassa az adatokat egy CSV fájlból, majd inicializálja az autók listáját.
+
+Main osztály
+A Main osztály a JavaFX alkalmazás belépési pontjaként szolgál. Kiterjeszti a Application osztályt, és inicializálja a grafikus felhasználói felületet.
+
+Metódusok
+start(Stage stage): Beállítja a fő nézetet, betölti a FXML fájlt, és megjeleníti a főablakot.
+Hide(): Elrejti a fő nézetet.
+Refresh(): Bezárja és újraindítja a fő nézetet a frissítéshez.
+MainController osztály
+A MainController osztály a fő GUI vezérlője, az autók megjelenítését, a felhasználói interakciók kezelését és az interfész frissítését végzi.
+
+Metódusok
+initialize(): Az autók megjelenítéséhez szükséges inicializáció.
+autoKezelo(): Új Pane elemek beszúrása az AnchorPane-be.
+createPane(int index): Új Pane elem létrehozása a megjelenítéshez.
+SecondApp osztály
+A SecondApp osztály egy második ablakot reprezentál az új autó hozzáadásához. Kiterjeszti a Stage osztályt.
+
+Metódusok
+start(Stage stage): Beállítja a második nézetet, betölti az FXML fájlt, és megjeleníti az ablakot.
+Close(): Bezárja a második nézetet.
+SecondAppController osztály
+A SecondAppController osztály a második ablak vezérlője, kezeli az új autó hozzáadását és a felhasználói interakciókat.
+
+Metódusok
+addToAutoker(ActionEvent event): Hozzáad egy új autót az autókereskedéshez és bezárja a második ablakot.
+initialize(): Az inicializációhoz szükséges metódusok.
+addImg(ActionEvent event): Képfájl hozzáadása az új autóhoz.
+KalkulatorApp osztály
+A KalkulatorApp osztály egy kalkulátor alkalmazást reprezentál. Kiterjeszti a Stage osztályt.
+
+Metódusok
+start(Stage stage): Beállítja a kalkulátor néezetét, betölti az FXML fájlt, és megjeleníti az ablakot.
+Close(): Bezárja a kalkulátor nézetét.
+KalkulatorController osztály
+A KalkulatorController osztály a kalkulátor ablak vezérlője, kezeli a számológép műveleteit és a felhasználói interakciókat.
+
+Metódusok
+addAction(ActionEvent event): Összeadás művelet kiválasztása.
+minusAction(ActionEvent event): Kivonás művelet kiválasztása.
+divideAction(ActionEvent event): Osztás művelet kiválasztása.
+multiplicationAction(ActionEvent event): Szorzás művelet kiválasztása.
+calculate(ActionEvent event): Kiszámolja az eredményt az aktuális művelettől függően.
+clearTextField(ActionEvent event): Törli a számmezőt és az elmentett műveleteket.
+button0Clicked(ActionEvent event): A "0" gombra kattintva hozzáadja a számhoz.
+button1Clicked(ActionEvent event): A "1" gombra kattintva hozzáadja a számhoz.
+... és így tovább a "button2Clicked" és a többi gombra.
+updateTextField(): Frissíti a számmezőt az aktuális számmal.
+addNumber(String number): Hozzáad egy számjegyet az aktuális számhoz.

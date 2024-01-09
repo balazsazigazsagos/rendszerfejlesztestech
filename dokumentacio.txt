@@ -1,0 +1,26 @@
+Autókereskedéshez követelményspecifikáció
+
+1. Jelenleg a Kókány autókereskedés bt. vállalkozás Eger külterületén egy telepen foglalkozik autó adás-vétellel. A telephelyünkön körülbelül 30 db gépjárművet tudunk egy időben tárolni, így a még családi vállalkozásként üzemelő cégünk igyekszik a legkelendőbb személygépjárművekre fektetni a hangsúlyt. A használt autókereskedés napjainkban igen fellendült Magyarorszáon, mivel a lakosság nagy része nem engedheti meg magának, hogy szalonból vásároljon egy új autót. Így a legreálisabb döntés egy jó állapotú használt autó megvétele. Jelenleg a telephelyünkön egy irodának kialakított helység működik, ahol papír alapon, füzetben zajlik az megvásárolt és az értékesített autók nyilvántartása. Itt  vezetjük, az eladási árat, a megvételi árat, az évjáratot és az autó rövid leírását is.
+
+
+2. Szeretnénk egy alkalmazást amit belső rendszerünkön, az irodában tudnánk hasznosítani, ezzel megkönnyítve a papírmunkát, a füzetben való keresgélést. A célunk, hogy a cégünk munkatársai minden autót könnyen tudjanak kezelni a nyilvántartásban, új autót vihessenek fel, illetve naprakész információkkal láthassuk el őket. Valamint a vállalkozásunk által termelt befektetésre alkalmas pénzösszegeket is kezelni tudja rendszer. Az elvárás hogy cégünk irodai számítógépén akadály mentesen üzemeltethető legyen, Microsoft Windows operációs rendszeren.
+
+
+3. Jelenlegi üzleti folyamatok
+3.1. Autók törzsadatainak nyilvántartása
+3.2. Autók kezelése
+3.2.1. Új autó beszerzése: autó megvásárlása => füzetbe való bejegyzése
+3.2.2. Autó eladása: füzetben "ELADÁS" bejegyzés => az autó értékesítése
+
+
+4. Igényelt üzleti folyamatok
+4.1. Digitális adatbázis a meglévő autók adataival
+4.2. Új autó felvitele az adatbázisba
+4.3. Meglévő autó értékesítése => autó törlése az adatbázisból
+4.4. Összes meglévő autó értékének összegzése egy helyen
+4.5. Kezelő felületről elérhető számológép
+
+
+5. Követelménylista
+K01 Könnyen üzemeltethető rendszer
+K02 Reszponzív dizájn
