@@ -25,4 +25,11 @@ public class SecondAppController extends MainController {
     public void initalize(){
         submitBTN.setOnAction(this::addToAutoker);
     }
+
+    public void addImg(ActionEvent event) {
+        FileChooser fc = new FileChooser();
+        ArrayList<String> extensions = new ArrayList<>(Arrays.asList("*.jpeg", "*.jpg", "*.png", "*.bmp"));
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image files", extensions));
+        File file = fc.showOpenDialog(null);
+    }
 }
