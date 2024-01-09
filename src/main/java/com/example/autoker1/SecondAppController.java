@@ -31,5 +31,15 @@ public class SecondAppController extends MainController {
         ArrayList<String> extensions = new ArrayList<>(Arrays.asList("*.jpeg", "*.jpg", "*.png", "*.bmp"));
         fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image files", extensions));
         File file = fc.showOpenDialog(null);
+
+        if (file != null) {
+            labelKepLink.setText(file.getAbsolutePath());
+            try {
+                Image image = new Image(new FileInputStream(file));
+                img.setImage(image);
+            } catch (FileNotFoundException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }
