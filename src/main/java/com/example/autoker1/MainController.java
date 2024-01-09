@@ -70,6 +70,8 @@ public class MainController {
         Image image = new Image(file.toURI().toString());
         imageView.setImage(image);
 
+        imageView.setOnMouseMoved(this::showImageOnScreen);
+
         pane.getChildren().add(imageView);
 
         //Értékesítve gomb és id létrehozása
