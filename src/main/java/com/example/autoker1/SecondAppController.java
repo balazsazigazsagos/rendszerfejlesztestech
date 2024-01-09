@@ -24,6 +24,7 @@ public class SecondAppController extends MainController {
     }
     public void initalize(){
         submitBTN.setOnAction(this::addToAutoker);
+        tallozas.setOnAction(this::addImg);
     }
 
     public void addImg(ActionEvent event) {
