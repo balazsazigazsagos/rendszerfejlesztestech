@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
-public class Kalkulator extends MainController {
+public class KalkulatorController extends MainController {
     public KalkulatorApp kalkulatorApp;
     @FXML
     private TextField textField;
