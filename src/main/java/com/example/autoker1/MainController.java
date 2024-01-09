@@ -71,6 +71,7 @@ public class MainController {
         imageView.setImage(image);
 
         imageView.setOnMouseMoved(this::showImageOnScreen);
+        imageView.setOnMouseExited(this::disAppearImage);
 
         pane.getChildren().add(imageView);
 
