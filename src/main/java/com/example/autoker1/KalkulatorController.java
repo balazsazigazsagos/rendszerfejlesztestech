@@ -1,4 +1,4 @@
-package sample;
+package com.example.autoker1;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

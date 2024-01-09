@@ -8,5 +8,5 @@
     <ImageView fx:id="imgShowedOnScreen" fitHeight="374.0" fitWidth="482.0" layoutX="390.0" layoutY="313.0" onMouseClicked="#disAppearImage" pickOnBounds="true" preserveRatio="true" />
     <Button fx:id="addCartoShopBTN" mnemonicParsing="false" onAction="#addNewCartoShop" prefHeight="31.0" prefWidth="136.0" text="Új autó hozzáadása" />
     <Label fx:id="osszesar" layoutX="146.0" prefHeight="39.0" prefWidth="260.0" />
-
+    <Button fx:id="kalkulator" layoutX="418.0" mnemonicParsing="false" onAction="#openKalkulator" prefHeight="31.0" prefWidth="136.0" text="Kalkulátor" />
 </AnchorPane>
