@@ -1,0 +1,46 @@
+Tesztelési jegyzőkönyv
+1.1. Rendszer megnevezése: Java fx
+1.2. Tesztelés dátuma: 2024.01.08.
+
+2.1. Tesztelés erőforrás-szükséglete Vállalkozó oldalon: 
+	-Hardver: számítógép
+	-Szoftver: Windows operációs rendszer, IDEA IntelliJ
+	-Emberi erőforrás: 4 tagú fejlesztői és tesztelői csapat
+	-Egyéb erőforrások: internetkapcsolat
+
+2.2 Tesztelés erőforrás-szükséglete Végső Kedvezményezett oldalán:
+	-Hardver: számítógép
+	-Szoftver: Windows operációs rendszer
+	-Emberi erőforrás: alap felhasználói ismeretek
+
+3.1 Tesztelési Folyamat:
+3.2 Felmérés és Előkészületek:
+	-adatok(beégetett információk,képek) előkészítése, Java környezet beállítása
+3.3 Tesztelési Szakaszok:
+3.3.1 Funkcionális teszt:
+	-Kezdőképernyő futtatása, méretezése, megjelenítése
+	-Adatbázis kezeléséhez szükséges funkciók
+	-metódusok tezstelése(hozzáadás, törlés,beolvasás,kiiratás,azonosítás)
+	-Adatok megjelenítése a képernyőn
+	-Gombok tesztelése
+	-Szöveg konkatanálása és megjelenítése
+	-Képek megjelenítése
+	-Változó képernyőhöz igazodó tartalom tesztelése
+	-Adatbázis működésének tesztelése(pl. egyedi azonosítók nevek, képek)
+3.3.2 Teljesítmény teszt:
+	-Program erőforrás igényének felmérése futtatás közben
+	-Tárhelyigény tesztelés
+
+3.4 Eredmények rögzítése:
+	-Sikertelen: adatkezelés során felmerülő hibák, nem helyesen működő metódusok - ezeknek javítása,
+		Program erőforrás igényének optimalizásáa(programkód hatékonyságának növelése)
+	-Sikeres: Program lefutása, funkciók, gombok működése, képek megjelenítése, 
+		számológép helyes működése
+
+3.5 Problémák és hibák nyilvántartása: a kódban felmerülő hibák részletes leírása, 
+	prioritások hozzárendelése a fejlesztői csapattal
+3.6 Végső értékelés és javítások: 
+	Hibák kezelése az előzőleg felállított prioritási sorrendben
+	Fejlesztésben és tesztelésben resztvevő csapattagok egyéni véleményei, tapasztalatai
+4.1 Átvételi eljáráson résztvevők : Dr. Tajti Tibor, Farkas Dorottya, Tímár Lukács Péter, Lengyel Bence, Kvetkó Balázs
+4.2 Dátum: 2024.01.10.
